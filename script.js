@@ -19,15 +19,13 @@ btnsCloseModal.addEventListener('click',closeModal);
 
 overylay.addEventListener('click',closeModal);
 
-function esc (){
-    document.addEventListener('keydown',function(e){
+    m2.addEventListener('keydown',function(e){
         if(e.key === 'Escape'){
             if (!modal.classList.contains('hidden')   ){
                 closeModal();
             }
         }
         })
-}
 
 
 
@@ -36,9 +34,6 @@ function esc (){
 for(var i = 0; i<btnsOpenModal.length; i++){
     btnsOpenModal[i].addEventListener('click',openModal);
 
-    if(btnsOpenModal[1]){
-        esc();
-    }
     
 
 }
